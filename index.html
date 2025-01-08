@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1166f2e528.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -64,29 +65,99 @@
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>2021 - 2024</span><br>B.Tech from Shri Ramdeobaba College of Engineering and Management,Nagpur.</li>
+                        <li><span>2021 - 2024</span><br>B.Tech from Shri Ramdeobaba College of Engineering and
+                            Management,Nagpur.</li>
                         <li><span>CGPA:</span><br>7.5 GPA</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+    <!-----------------------services---------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Crafting visually appealing, user-friendly, and responsive website designs that blend creativity
+                        with functionality. I
+                        focus on delivering modern, intuitive layouts tailored to enhance user experience and reflect
+                        your brand’s unique identity</p>
+                    <a href="#">Learn more..</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i> 
+                    <h2>UI/UX Design</h2>
+                    <p>Crafting visually appealing, user-friendly, and responsive website designs that blend creativity
+                        with functionality. I
+                        focus on delivering modern, intuitive layouts tailored to enhance user experience and reflect
+                        your brand’s unique identity</p>
+                    <a href="#">Learn more..</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Crafting visually appealing, user-friendly, and responsive website designs that blend creativity
+                        with functionality. I
+                        focus on delivering modern, intuitive layouts tailored to enhance user experience and reflect
+                        your brand’s unique identity</p>
+                    <a href="#">Learn more..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------portfolio---------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <b>The app connects you to the talented people around the world.
+                            Download the app and get connected.</b>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <b>The app connects you to the talented people around the world.
+                            Download the app and get connected.</b>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <b>The app connects you to the talented people around the world.
+                            Download the app and get connected.</b>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-        
-        
-    }
-</script>
+    </script>
 </body>
 
 </html>
