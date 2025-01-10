@@ -12,7 +12,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
+    /* background-image: url(images/background.png); */
     background-size: cover;
     background-position: center;
 }
@@ -322,4 +322,44 @@ form .btn2{
 }
 .copyright i{
     color: red;
+}
+/* -----------------CSS for small screens-------------------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px) {
+    #header {
+        height: 100%;
+    }
+    .header-text.header-text h1 {
+        font-size: 30px;
+    }
+    .header-text.header-text {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    nav .fa-solid{
+        display: none;
+    }
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px 0;
+    }
+    nav ul .fa-solid {
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
 }
